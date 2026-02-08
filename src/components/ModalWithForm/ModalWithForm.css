@@ -1,0 +1,134 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0000004d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.modal_opened {
+  visibility: visible;
+}
+
+.modal__title {
+  font-size: 16px;
+  margin: 0 0 24;
+  line-height: 20px;
+  padding-bottom: 24px;
+}
+
+.modal__close {
+  width: 20px;
+  height: 20px;
+  background: url("../../assets/closeicon.png") center no-repeat;
+  position: absolute;
+  top: 20px;
+  right: 28px;
+  background-color: transparent;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+.modal__content {
+  background-color: white;
+  position: relative;
+  padding: 28px 28px 36px;
+  max-width: 496px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.modal__input {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #000000;
+  box-sizing: border-box;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+  font-size: 16px;
+}
+
+.modal__legend {
+  font-size: 16px;
+  margin: 0 0 24;
+  line-height: 20px;
+  padding-bottom: 24px;
+}
+
+.modal__radio-buttons {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 0;
+  font-size: 16px;
+  color: #000000;
+}
+
+.modal__submit {
+  font-family: "Cabinet Grotesk Bold", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 8px 16px;
+  width: fit-content;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 4px;
+  margin-top: 24px;
+  cursor: pointer;
+}
+
+.modal__label {
+  position: relative;
+  display: block;
+  margin-bottom: 24px;
+}
+
+.modal__label_type_radio {
+  padding-bottom: 8px;
+  padding-right: 8px;
+  margin: 0;
+  gap: 10px;
+}
+.modal__radio-input {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 627px) {
+  .modal__content {
+    width: 100%;
+    height: 463px;
+    top: 180px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .modal__submit {
+    border: none;
+    border-radius: 4px;
+    margin-top: 24px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .modal__close {
+    background: url("../../assets/blackclose.png");
+    padding-top: 20px;
+  }
+}
