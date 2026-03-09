@@ -19,3 +19,8 @@ It fetches real-time weather data and suggests appropriate clothing items based 
 - React
 - JavaScript (ES6)
 - API's
+
+## Project Pitch Video
+
+Check out [this video](https://drive.google.com/file/d/1mSeycGCJweybEOCxfLKEoGWO6W-RTEQe/view?usp=sharing), where I describe my
+project and some challenges I faced while building it.

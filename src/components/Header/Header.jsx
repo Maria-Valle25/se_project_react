@@ -1,8 +1,10 @@
 import "./Header.css";
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 import avatar from "../../assets/avatar.png";
 import hamburgerIcon from "../../assets/menu.png";
 import closeIcon from "../../assets/close.png";
+import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 
 function Header({
   handleAddClick,
@@ -21,10 +23,14 @@ function Header({
 
   return (
     <header className="header">
-      <img className="header__logo" alt="WTWR logo" src={logo} />
+      <NavLink to="/">
+        <img className="header__logo" alt="WTWR logo" src={logo} />
+      </NavLink>
+
       <p className="header__date-and-location">
         {currentDate}, {weatherData.city}
       </p>
+      <ToggleSwitch />
       <button
         onClick={handleAddClick}
         type="button"
@@ -32,10 +38,12 @@ function Header({
       >
         + Add clothes
       </button>
-      <div className="header__user-container">
-        <p className="header__username">Terrence Tegegne</p>
-        <img src={avatar} alt="Terrence Tegegne" className="header__avatar" />
-      </div>
+      <NavLink className="header__nav-link" to="/profile">
+        <div className="header__user-container">
+          <p className="header__username">Terrence Tegegne</p>
+          <img src={avatar} alt="Terrence Tegegne" className="header__avatar" />
+        </div>
+      </NavLink>
       <button
         type="button"
         className="header__mobile-menu-btn"

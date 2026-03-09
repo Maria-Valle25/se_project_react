@@ -1,0 +1,30 @@
+.clothing-section {
+  max-width: 1015px;
+  flex-grow: 1;
+}
+.clothes-section__row {
+  display: flex;
+}
+
+.clothes-section__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 323px);
+  grid-template-rows: repeat(auto-fit, 326px);
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.clothes-section__add-btn {
+  padding-left: 20px;
+  font-size: 20px;
+  border: none;
+  color: #00000099;
+  cursor: pointer;
+}
+
+.clothes-section__text {
+  font-size: 20px;
+}

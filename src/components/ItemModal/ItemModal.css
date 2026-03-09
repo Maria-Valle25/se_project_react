@@ -1,4 +1,4 @@
-.modal__content_type_image {
+.modal__content.modal__content_type_image {
   position: relative;
   padding: 0;
   border-radius: 16px;
@@ -15,25 +15,40 @@
   color: white;
 }
 
+.modal__close.modal__close-btn {
+  background: url("../../assets/whiteclose.png") center no-repeat;
+}
+
+.modal__footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 20px 32px 32px;
+  gap: 8px 20px;
+}
+
 .modal__caption {
   margin: 0;
-  padding-left: 32px;
-  padding-top: 20px;
+  margin-right: auto;
   font-size: 20px;
-  line-height: 24px;
   font-weight: 700;
 }
 
 .modal__weather {
+  width: 100%;
   margin: 0;
-  padding: 12px 0 32px 32px;
   font-size: 20px;
-  line-height: 24px;
   font-weight: 700;
 }
 
-.modal__close-btn {
-  background: url("../../assets/whiteclose.png") center no-repeat;
+.modal__delete-btn {
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: #ff4d00;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 627px) {

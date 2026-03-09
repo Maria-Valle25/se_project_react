@@ -1,0 +1,38 @@
+.modal__content.modal__content_type_confirmation {
+  max-width: 670px;
+  padding: 60px 151px;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.modal__confirmation-text {
+  margin: 0 0 40px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.modal__confirm-btn {
+  display: block;
+  margin: 0 auto 24px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #ff4d00;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+
+.modal__cancel-btn {
+  border: none;
+  background: transparent;
+  color: #000;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  cursor: pointer;
+}
