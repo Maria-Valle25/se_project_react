@@ -7,7 +7,7 @@ import Main from "../Main/Main";
 import Footer from "../Footer/Footer";
 import ItemModal from "../ItemModal/ItemModal";
 import Profile from "../Profile/Profile";
-import { getweather, filterWeatherData } from "../../utils/weatherApi";
+import { getWeather, filterWeatherData } from "../../utils/weatherApi";
 import CurrentTemperatureUnitContext from "../../context/CurrentTemperatureUnitContext";
 import AddItemModal from "../AddItemModal/AddItemModal";
 import { Routes, Route } from "react-router-dom";
@@ -90,7 +90,6 @@ function App() {
   };
 
   const closeActiveModal = () => {
-    console.log("closeActiveModal called");
     setActiveModal("");
   };
 
@@ -110,7 +109,7 @@ function App() {
   }, [activeModal]);
 
   useEffect(() => {
-    getweather(coordinates, APIkey)
+    getWeather(coordinates, APIkey)
       .then((data) => {
         const filteredData = filterWeatherData(data);
         setWeatherData(filteredData);

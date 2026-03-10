@@ -86,21 +86,9 @@
     },
     {
       "name": "shirt",
-      "imageUrl": "https://images.unsplash.com/photo-1659963970293-b12cfeb286c5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZmxpcCUyMGZsb3BzfGVufDB8fDB8fHww",
-      "weather": "hot",
-      "_id": 27
-    },
-    {
-      "name": "shirt",
-      "imageUrl": "https://images.unsplash.com/photo-1659963970293-b12cfeb286c5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZmxpcCUyMGZsb3BzfGVufDB8fDB8fHww",
-      "weather": "hot",
-      "_id": 28
-    },
-    {
-      "name": "name ",
       "imageUrl": "https://images.unsplash.com/photo-1633966887768-64f9a867bdba?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dHNoaXJ0fGVufDB8fDB8fHww",
       "weather": "warm",
-      "_id": 29
+      "_id": 27
     }
   ]
 }
