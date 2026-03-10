@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import "./ToggleSwitch.css";
-import CurrentTemperatureUnitContext from "../../context/CurrentTemperatureUnitContext";
+import CurrentTemperatureUnitContext from "../../contexts/CurrentTemperatureUnit";
 
 export default function ToggleSwitch() {
   const { handleToggleSwitchChange, currentTemperatureUnit } = useContext(
@@ -16,14 +16,16 @@ export default function ToggleSwitch() {
       />
       <span className="toggle-switch__circule"></span>
       <span
-        style={{ color: `${currentTemperatureUnit === "F" ? "white" : ""}` }}
-        className={`toggle-switch__text toggle-switch__text_F `}
+        className={`toggle-switch__text toggle-switch__text_F ${
+          currentTemperatureUnit === "F" ? "toggle-switch__text_active" : ""
+        }`}
       >
         F
       </span>
       <span
-        style={{ color: `${currentTemperatureUnit === "C" ? "white" : ""}` }}
-        className={`toggle-switch__text toggle-switch__text_C `}
+        className={`toggle-switch__text toggle-switch__text_C ${
+          currentTemperatureUnit === "C" ? "toggle-switch__text_active" : ""
+        }`}
       >
         C
       </span>

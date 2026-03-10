@@ -39,6 +39,10 @@
   right: 9px;
 }
 
+.toggle-switch__text_active {
+  color: #fff;
+}
+
 .toggle-switch__checkbox:checked ~ .toggle-switch__circule {
   left: 28px;
 }
